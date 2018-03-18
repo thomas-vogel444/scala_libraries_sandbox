@@ -11,6 +11,7 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= Seq(
       "com.typesafe.akka" %% "akka-http" % "10.0.11",
       "com.typesafe.akka" %% "akka-http-testkit" % "10.0.11" % Test,
+      "com.datastax.cassandra" % "cassandra-driver-core" % "3.4.0",
       scalaTest % Test
     )
   )
